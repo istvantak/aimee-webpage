@@ -39,6 +39,10 @@ body {
     overflow-x: hidden;
 }
 
+body.subpage-body {
+    background-color: var(--bg-light);
+}
+
 .container {
     max-width: var(--max-width);
     margin: 0 auto;
@@ -253,19 +257,17 @@ a {
 /* Subpage Hero Section */
 .subpage-hero {
     padding: var(--spacing-xl) 0;
-    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
-    border-bottom: 1px solid var(--border-color);
+    background: var(--bg-light);
 }
 
 .subpage-hero-content {
-    text-align: center;
+    text-align: left;
     max-width: 800px;
-    margin: 0 auto;
 }
 
 .subpage-hero-title {
     font-size: 2.5rem;
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
     color: var(--primary-color);
     font-weight: 700;
 }
@@ -274,6 +276,49 @@ a {
     font-size: 1.125rem;
     color: var(--text-light);
     margin: 0;
+    line-height: 1.6;
+}
+
+.challenges-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.challenge-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+}
+
+.challenge-text {
+    flex: 1;
+}
+
+.challenge-text strong {
+    display: block;
+    color: var(--text-dark);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.challenge-text p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.challenge-icon {
+    width: 24px;
+    height: 24px;
+    color: #d97706;
+    flex-shrink: 0;
+    margin-top: 2px;
 }
 
 .hero-content {
@@ -428,15 +473,53 @@ a {
     transform: translateX(5px);
 }
 
+/* Challenges Section */
+.challenges {
+    padding: var(--spacing-lg) 0;
+    background: var(--bg-white);
+}
+
+.subpage-body .challenges {
+    background: var(--bg-light);
+}
+
+.challenges h2 {
+    text-align: left;
+    margin-bottom: var(--spacing-lg);
+    font-size: 1.75rem;
+}
+
+.challenges-content {
+    display: block;
+}
+
+.challenges-image {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.challenges-image img {
+    width: 70%;
+    height: auto;
+    border-radius: 0.75rem;
+    border: 1px solid var(--primary-color);
+}
+
 /* Comparison Section */
 .comparison {
-    padding: var(--spacing-2xl) 0;
+    padding: var(--spacing-lg) 0;
     background: var(--bg-white);
+}
+
+.subpage-body .comparison {
+    background: var(--bg-light);
 }
 
 .comparison h2 {
     text-align: left;
     margin-bottom: var(--spacing-lg);
+    font-size: 1.75rem;
 }
 
 .comparison-text {
@@ -483,13 +566,18 @@ a {
 
 /* Document Processing Module Section */
 .doc-module {
-    padding: var(--spacing-xl) 0;
+    padding: var(--spacing-md) 0;
     background: var(--bg-white);
+}
+
+.subpage-body .doc-module {
+    background: var(--bg-light);
 }
 
 .doc-module h2 {
     text-align: left;
     margin-bottom: var(--spacing-lg);
+    font-size: 1.75rem;
 }
 
 .doc-module-intro {
@@ -574,13 +662,14 @@ a {
 
 /* Use Cases Section */
 .use-cases {
-    padding: var(--spacing-2xl) 0;
+    padding: var(--spacing-lg) 0;
     background: var(--bg-light);
 }
 
 .use-cases h2 {
     text-align: left;
     margin-bottom: var(--spacing-sm);
+    font-size: 1.75rem;
 }
 
 .use-cases-intro {
@@ -682,7 +771,11 @@ a {
 
 /* Contact Us Banner */
 .contact-banner {
-    padding: var(--spacing-xl) 0;
+    padding: var(--spacing-md) 0;
+}
+
+.subpage-body .contact-banner {
+    background: var(--bg-light);
 }
 
 .banner-content {
@@ -1121,6 +1214,10 @@ a {
 
     .subpage-hero-subtitle {
         font-size: 1rem;
+    }
+
+    .challenges-content {
+        grid-template-columns: 1fr;
     }
 
     .hero-buttons {
