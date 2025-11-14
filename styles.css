@@ -279,6 +279,18 @@ a {
     line-height: 1.6;
 }
 
+.subpage-hero-content-full {
+    text-align: left;
+    max-width: 100%;
+}
+
+.subpage-hero-subtitle-full {
+    font-size: 1.125rem;
+    color: var(--text-light);
+    margin: 0;
+    line-height: 1.6;
+}
+
 .challenges-list {
     list-style: none;
     padding: 0;
@@ -475,7 +487,7 @@ a {
 
 /* Challenges Section */
 .challenges {
-    padding: var(--spacing-md) 0;
+    padding: calc(var(--spacing-md) * 1.5) 0;
     background: var(--bg-white);
 }
 
@@ -508,7 +520,7 @@ a {
 
 /* Comparison Section */
 .comparison {
-    padding: var(--spacing-md) 0;
+    padding: calc(var(--spacing-md) * 1.5) 0;
     background: var(--bg-white);
 }
 
@@ -566,7 +578,7 @@ a {
 
 /* Document Processing Module Section */
 .doc-module {
-    padding: var(--spacing-md) 0;
+    padding: calc(var(--spacing-md) * 1.5) 0;
     background: var(--bg-white);
 }
 
@@ -595,9 +607,13 @@ a {
     margin-bottom: calc(var(--spacing-xl) * 1.5);
 }
 
+.doc-module-item:last-child {
+    margin-bottom: 0;
+}
+
 .doc-module-content h3 {
     font-size: 1.75rem;
-    color: var(--primary-color);
+    color: #4F3A6B;
     margin-bottom: var(--spacing-md);
     display: flex;
     align-items: center;
@@ -622,11 +638,11 @@ a {
     background: var(--bg-light);
     padding: var(--spacing-md);
     border-radius: 0.5rem;
-    border-left: 4px solid var(--primary-color);
+    border-left: 4px solid #4F3A6B;
 }
 
 .doc-module-benefit strong {
-    color: var(--primary-color);
+    color: #4F3A6B;
     font-weight: 700;
 }
 
@@ -662,7 +678,7 @@ a {
 
 /* Use Cases Section */
 .use-cases {
-    padding: var(--spacing-lg) 0;
+    padding: calc(var(--spacing-md) * 1.5) 0;
     background: var(--bg-light);
 }
 
@@ -960,6 +976,14 @@ a {
 .contact {
     padding: var(--spacing-2xl) 0;
     background: var(--bg-white);
+}
+
+.subpage-body .contact {
+    background: var(--bg-light);
+}
+
+.contact .section-header h2 {
+    font-size: 1.75rem;
 }
 
 .contact-cards {
@@ -1415,4 +1439,184 @@ html {
     width: 100%;
     max-width: 100%;
     padding: 0;
+}
+
+/* About Danubius Section */
+.about-danubius {
+    padding: calc(var(--spacing-md) * 1.5) 0;
+    background: var(--bg-white);
+}
+
+.subpage-body .about-danubius {
+    background: var(--bg-light);
+}
+
+.about-danubius h2 {
+    text-align: left;
+    margin-bottom: var(--spacing-lg);
+    font-size: 1.75rem;
+}
+
+.about-text {
+    font-size: 1.125rem;
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-md);
+}
+
+/* Mission and Vision Section */
+.mission-vision {
+    padding: calc(var(--spacing-md) * 1.5) 0;
+    background: var(--bg-white);
+}
+
+.subpage-body .mission-vision {
+    background: var(--bg-light);
+}
+
+.mission-vision-box {
+    background: var(--bg-white);
+    padding: var(--spacing-xl);
+    border-radius: 1rem;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-color);
+}
+
+.mission-vision h2 {
+    text-align: left;
+    margin-bottom: var(--spacing-lg);
+    font-size: 1.75rem;
+}
+
+.mission-text {
+    font-size: 1.125rem;
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-lg);
+}
+
+.mission-highlight {
+    color: #4F3A6B;
+    font-weight: 700;
+}
+
+.mission-intro {
+    font-size: 1.125rem;
+    color: var(--text-dark);
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    font-weight: 700;
+}
+
+.mission-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: var(--spacing-lg);
+}
+
+.mission-list li {
+    font-size: 1.125rem;
+    color: var(--text-light);
+    margin-bottom: calc(var(--spacing-sm) / 2);
+    line-height: 1.6;
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+}
+
+.mission-icon {
+    width: 24px;
+    height: 24px;
+    color: #4F3A6B;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.vision-text {
+    font-size: 1.125rem;
+    color: var(--text-light);
+    line-height: 1.6;
+    margin: 0;
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-md);
+    background: var(--bg-white);
+    border-left: 4px solid #4F3A6B;
+    border-radius: 0.5rem;
+}
+
+/* Timeline Section */
+.timeline-section {
+    padding: calc(var(--spacing-md) * 1.5) 0;
+    background: var(--bg-white);
+    overflow: hidden;
+}
+
+.subpage-body .timeline-section {
+    background: var(--bg-light);
+}
+
+.timeline-title {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    font-size: 1.75rem;
+    color: var(--text-dark);
+}
+
+.timeline-carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.timeline-track {
+    display: flex;
+    gap: var(--spacing-lg);
+    animation: scroll 40s linear infinite;
+    width: fit-content;
+}
+
+.timeline-track:hover {
+    animation-play-state: paused;
+}
+
+.timeline-item {
+    flex-shrink: 0;
+    width: 350px;
+    height: 250px;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.timeline-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline-item {
+        width: 280px;
+        height: 200px;
+    }
+
+    .timeline-title {
+        font-size: 1.5rem;
+    }
 }
