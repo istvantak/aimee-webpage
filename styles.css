@@ -538,7 +538,7 @@ a {
     font-size: 1.125rem;
     color: var(--text-light);
     line-height: 1.6;
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: 0;
 }
 
 .comparison-highlight {
@@ -880,6 +880,21 @@ a {
     line-height: 1.8;
     font-weight: 500;
     margin: 0;
+}
+
+.about-link {
+    color: var(--primary-color);
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    margin-top: var(--spacing-md);
+    font-size: 1rem;
+}
+
+.about-link:hover {
+    color: var(--primary-dark);
+    transform: translateX(5px);
 }
 
 
