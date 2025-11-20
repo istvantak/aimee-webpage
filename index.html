@@ -37,11 +37,14 @@
                     </li>
                     <li><a href="rolunk.html" class="nav-link">Rólunk</a></li>
                     <li><a href="#contact" class="nav-link">Kapcsolat</a></li>
-                    <li><a href="#demo" class="btn-primary">Próbáld ki</a></li>
+                    <li><a href="#contact" class="btn-primary">Próbáld ki</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay"></div>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -51,7 +54,7 @@
                     <h2 class="hero-title">Üdvözöl az Aimee</h2>
                     <p class="hero-subtitle">Valós megoldás a valós problémákra – levesszük a terhet a válladról, hogy a csapatod a lényegre koncentrálhasson.</p>
                     <div class="hero-buttons">
-                        <a href="#demo" class="btn-primary btn-large">Próbáld ki most</a>
+                        <a href="#contact" class="btn-primary btn-large">Próbáld ki most</a>
                         <a href="#solutions" class="btn-secondary btn-large">Tudj meg többet</a>
                     </div>
                 </div>
@@ -79,7 +82,7 @@
                 <div class="solution-card">
                     <div class="solution-number">02</div>
                     <h3>AI-vezérelt dokumentum feldolgozás</h3>
-                    <p>Beérkező számlák, szerződések és formanyomtatványok gyors, pontos azonosítása és adatkinyerése</p>
+                    <p>Beérkező számlák, szerződések és formanyomtatványok gyors, pontos azonosítása és adatkinyerése.</p>
                     <a href="dokumentum-feldolgozas.html" class="solution-link">Tudj meg többet →</a>
                 </div>
                 <div class="solution-card">
@@ -100,7 +103,7 @@
                     <h2>Nem tudod, hol kezdd? <span class="highlight">Találjuk meg közösen az irányt!</span></h2>
                 </div>
                 <div class="banner-cta">
-                    <a href="#contact" class="btn-banner">Beszéljünk</a>
+                    <h3><a href="#contact" class="btn-banner">Beszéljünk</a></h3>
                 </div>
             </div>
         </div>
@@ -110,7 +113,7 @@
     <section id="features" class="features">
         <div class="container">
             <div class="section-header">
-                <h2>Miért válaszd az Aimee-t?</h2>
+                <h2>Miért válaszd az <span class="break-mobile">Aimee-t?</span></h2>
                 <p class="features-subtitle">Aimee az a plusz lendület, ami előrébb viszi csapatod a mindennapi kihívásokban.</p>
             </div>
             <div class="features-grid">
@@ -193,13 +196,13 @@
         <div class="container">
             <div class="section-header">
                 <h2>Lépj kapcsolatba velünk</h2>
-                <p class="contact-intro">Minden új lehetőség egy beszélgetéssel kezdődik.<br>Keress meg minket, beszéljük át az elképzeléseidet, mi pedig segítünk megtalálni a legjobb megoldást!</p>
+                <p class="contact-intro">Minden új lehetőség egy beszélgetéssel kezdődik.<br class="hide-mobile">Keress meg minket, beszéljük át az elképzeléseidet, mi pedig segítünk megtalálni a legjobb megoldást!</p>
             </div>
             <div class="contact-cards">
                 <div class="contact-card">
                     <div class="contact-header">
                         <div class="contact-image-wrapper">
-                            <img src="inputs/kis_isti.jpg" alt="Kis István" class="contact-image">
+                            <img src="inputs/kis_isti_small.png" alt="Kis István" class="contact-image">
                         </div>
                         <div class="contact-info">
                             <h3 class="contact-name">Kis István</h3>
@@ -224,7 +227,7 @@
                 <div class="contact-card">
                     <div class="contact-header">
                         <div class="contact-image-wrapper">
-                            <img src="inputs/Eniko_contact.png" alt="Szalai-Huszár Enikő" class="contact-image">
+                            <img src="inputs/Eniko_contact_foto_small.png" alt="Szalai-Huszár Enikő" class="contact-image">
                         </div>
                         <div class="contact-info">
                             <h3 class="contact-name">Szalai-Huszár Enikő</h3>
@@ -253,38 +256,16 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Aimee</h3>
-                    <p>Intelligens megoldások a modern kor számára</p>
+            <div class="footer-content-simple">
+                <div class="footer-left">
+                    <p><strong>&copy; 2024 Aimee</strong>. Minden jog fenntartva.</p>
                 </div>
-                <div class="footer-section">
-                    <h4>Linkek</h4>
-                    <ul>
-                        <li><a href="#home">Kezdőlap</a></li>
-                        <li><a href="#features">Funkciók</a></li>
-                        <li><a href="#about">Rólunk</a></li>
-                    </ul>
+                <div class="footer-center">
+                    <p><a href="inputs/AImee_ÁSZF_FINAL_20251103.pdf" target="_blank">Általános szerződési feltételek</a></p>
                 </div>
-                <div class="footer-section">
-                    <h4>Jogi</h4>
-                    <ul>
-                        <li><a href="#">Adatvédelem</a></li>
-                        <li><a href="#">Felhasználási feltételek</a></li>
-                    </ul>
+                <div class="footer-right">
+                    <p>Kövess minket: <a href="https://www.linkedin.com/company/aimee-solutions/posts/?feedView=all" target="_blank" aria-label="LinkedIn" class="social-link-box">LI</a></p>
                 </div>
-                <div class="footer-section">
-                    <h4>Kövess minket</h4>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook">FB</a>
-                        <a href="#" aria-label="Twitter">TW</a>
-                        <a href="#" aria-label="LinkedIn">LI</a>
-                        <a href="#" aria-label="Instagram">IG</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Aimee. Minden jog fenntartva.</p>
             </div>
         </div>
     </footer>

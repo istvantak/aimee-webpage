@@ -43,12 +43,15 @@
         </div>
     </nav>
 
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay"></div>
+
     <!-- Hero Section -->
     <section class="subpage-hero">
         <div class="container">
             <div class="subpage-hero-content">
                 <h1 class="subpage-hero-title">Automatizált email kezelés</h1>
-                <p class="subpage-hero-subtitle">Az Aimee email kezelő modulja automatizálja az ügyfélkommunikációt – kategorizál, priorizál és előkészíti a válaszokat, hogy Ön a lényegre koncentrálhasson.</p>
+                <p class="subpage-hero-subtitle">Az Aimee email kezelő modulja felgyorsítja és automatizálja az ügyfélkommunikációt – kategorizál, priorizál és előkészíti vagy akár ki is küldi a válaszokat.</p>
             </div>
         </div>
     </section>
@@ -56,7 +59,7 @@
     <!-- Challenges Section -->
     <section class="challenges">
         <div class="container">
-            <h2>Kihívások és megoldások az email kezelésben</h2>
+            <h2>Kihívások az email kezelésben</h2>
             <div class="challenges-content">
                 <ul class="challenges-list">
                 <li class="challenge-item">
@@ -82,8 +85,8 @@
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" fill="currentColor"/>
                     </svg>
                     <div class="challenge-text">
-                        <strong>Ismétlődő kérdések</strong>
-                        <p>Sok email hasonló vagy gyakran ismétlődő kérdéseket tartalmaz, amelyekre ugyanazokat a válaszokat kell adni</p>
+                        <strong>Rejtett információk, csatolmányok</strong>
+                        <p>Az üzenet szövegében és a csatolt dokumentumokban található fontos adatok gyors megtalálása és feldolgozása kihívás</p>
                     </div>
                 </li>
                 <li class="challenge-item">
@@ -103,7 +106,8 @@
     <!-- Comparison Section -->
     <section id="comparison" class="comparison">
         <div class="container">
-            <p class="comparison-text">A manuális email feldolgozás nemcsak időigényes és költséges, de gyakran vezet lassú válaszidőkhöz és elmaradó ügyfelekhez is. Az Aimee egy olyan kolléga, aki a nap 24 órájában automatikusan feldolgozza és megválaszolja a beérkező emaileket.</p>
+            <h2>Email feldolgozás <span class="break-mobile">Aimee-vel</span></h2>
+            <p class="comparison-text">Az Aimee automatikusan olvassa, értelmezi, feldolgozza a beérkező email megkereséseket.</p>
             <div class="comparison-stats">
                 <div class="stat-item">
                     <div class="stat-number">95%</div>
@@ -111,11 +115,7 @@
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">90%</div>
-                    <div class="stat-label">feletti pontosság az email csatolmányok felismerésében és kezelésében</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">24/7</div>
-                    <div class="stat-label">folyamatos rendelkezésre állás</div>
+                    <div class="stat-label">feletti pontosság az email válaszokban</div>
                 </div>
             </div>
         </div>
@@ -125,38 +125,69 @@
     <section class="doc-module">
         <div class="container">
             <h2>Aimee email kezelő modul</h2>
-            <p class="doc-module-intro">Az Aimee automatikusan elvégzi az emailek priorizálást, kategórizálásás és előkészíti a válaszokat. Az intuitív felületnek köszönhetően könnyen átláthatóvá teszi a további teendőket. Az Aimee által előzetesen feldolgozott emaileket kiküldés előtt már csak át kell nézni, illetve csak azokkal kell manuálisan foglalkozni, amelyek valóban odafigyelést és szakértelmet igényelnek.</p>
+            <p class="doc-module-intro">Az Aimee automatikusan elvégzi az emailek priorizálást, kategórizálásás és előkészíti a válaszokat. Az intuitív felületnek köszönhetően könnyen átláthatóvá teszi a további teendőket. Az Aimee által előzetesen feldolgozott emaileket kiküldés előtt már csak át kell nézni és csak azokkal kell manuálisan foglalkozni, amelyek valóban odafigyelést és szakértelmet igényelnek.</p>
 
             <div class="doc-module-item doc-module-item-full">
                 <div class="doc-module-content-full">
-                    <h3>Tudásbázis kezelés és integráció</h3>
-                    <p class="doc-module-description">Mindennek az alapja egy feldolgozásra optimalizált, jól felépített tudásbázis. Az AI-lekérdezésre optimalizált rendszer a magyar nyelvet kiválóan kezeli, könnyen bővíthető, és többféle kommunikációs interfészen elérhető (pl. chat, beépülő modul). A válaszok forrásai pontosan megjelölhetők. Háttérrendszeri hívások érhetők el API-n keresztül, feladatok összegyűjtése email alapján, végrehajtás, feldolgozási eredési és jóváhagyási pontok. Aktív fejlesztés az ügyféligények folyamatos gyűjtésével és beépítésével. A legújabb technológiák és a gyorsan változó trendek követése versenyképes megoldásokat biztosít.</p>
-                    <div class="doc-module-benefit">
-                        <strong>Előny:</strong> Megbízható, strukturált információ, amely egyszerűen karbantartható és bővíthető. Zökkenőmentes integráció, folyamatos fejlesztés, mindig naprakész technológia.
-                    </div>
-                </div>
-            </div>
-
-            <div class="doc-module-item">
-                <div class="doc-module-image">
-                    <img src="inputs/Email_kezeles2.png" alt="Kategorizálás és prioritás" class="clickable-image" onclick="openImageModal(this.src)">
-                </div>
-                <div class="doc-module-content">
-                    <h3>Kategorizálás és priorizálás</h3>
-                    <p class="doc-module-description">Automatikus besorolás kulcsszavak, a kommunikáció stílusa és az ügyfél érzelmeinek elemzésével. Azonnal felméri a sürgősséget és egyéni szabályok is beépíthetők. Ráépíthető backoffice folyamatok, feladatok automatikus kiosztása, többszintű felhasználható admin felület és statisztikák.</p>
-                    <div class="doc-module-benefit">
-                        <strong>Előny:</strong> Azonnali priorizálás, átlátható folyamatok és hatékony elosztás.
+                    <h3>Email felismerés és kategorizálás</h3>
+                    <p class="doc-module-description">Azonosítja az üzenet témáját, feladóját és kontextusát, majd automatikusan a megfelelő kategóriába vagy folyamathoz rendeli. A kategóriák ráépíthető backoffice folyamatok, feladatok automatikus kiosztása, többszintű felhasználható admin felület és statisztikák is.</p>
+                    <div class="doc-module-benefit-with-image">
+                        <div class="doc-module-benefit">
+                            <strong>Előny:</strong> Azonnali átláthatóság, gyorsabb ügykezelés, pontosan célzott továbbítás, kevesebb manuális válogatás.
+                        </div>
+                        <div class="doc-module-image-left">
+                            <img src="inputs/Email_kezeles3.png" alt="Email felismerés és kategorizálás" class="clickable-image email-category-image" onclick="openImageModal(this.src)">
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="doc-module-item">
                 <div class="doc-module-content">
-                    <h3>Automatikus válaszok</h3>
-                    <p class="doc-module-description">A tudásbázisra és háttérrendszeri integrációra épülő automatikus válaszadás. Az ügyintéző készen kapja a válasz opciókat, melyet módosíthat és egyetlen gombnyomással elküldhet. Az AI értékeli a saját válaszát és bizonyos érték felett automatikusan kiküldi. Előkészíti a szükséges háttérhívásokat is, melyeket az ügyintéző egy gombnyomással lefuttathat. A visszajelzés alapján a válasz újratanulása. Csatolmányok feldolgozása, az abban lévő adatok is bővítik a kontextust.</p>
-                    <div class="doc-module-benefit">
-                        <strong>Előny:</strong> Gyors válaszidő, kiváló minőség, emberi kontroll és folyamatos tanulás.
-                    </div>
+                    <h3>Email válasz előkészítés és kiküldés</h3>
+                    <p class="doc-module-description">Nemcsak felismeri az emaileket, hanem képes a tudásbázisra és háttérrendszeri integrációra építve javaslatot tenni. Tehát az ügyintéző készen kapja a válasz opciókat, melyet ha szükséges módosíthat és egyetlen gombnyomással elküldhet.</p>
+                    <ul class="mission-list">
+                        <li>
+                            <svg class="mission-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="currentColor"/>
+                            </svg>
+                            <span>AI-alapú válaszjavaslatok - a tudásbázisra, korábbi levelezésekre és háttérrendszeri integrációkra építve</span>
+                        </li>
+                        <li>
+                            <svg class="mission-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="currentColor"/>
+                            </svg>
+                            <span>Csatolmányok feldolgozása</span>
+                        </li>
+                        <li>
+                            <svg class="mission-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="currentColor"/>
+                            </svg>
+                            <span>Sablonok használata</span>
+                        </li>
+                        <li>
+                            <svg class="mission-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="currentColor"/>
+                            </svg>
+                            <span>Automatikus válaszadás megbízhatósági szint alapján</span>
+                        </li>
+                        <li>
+                            <svg class="mission-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="currentColor"/>
+                            </svg>
+                            <span>Teljes átláthatóság és kontroll a felhasználó kezében</span>
+                        </li>
+                        <li>
+                            <svg class="mission-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="currentColor"/>
+                            </svg>
+                            <span>Többnyelvű válaszképesség</span>
+                        </li>
+                    </ul>
+
+                    <h3 style="margin-top: 4.5rem;">Tudásbázis</h3>
+                    <p class="doc-module-description">Mindennek az alapja egy feldolgozásra optimalizált, jól felépített tudásbázis. Ez biztosítja, hogy minden válaszát pontos, ellenőrzött és naprakész információkra építve adja meg.</p>
+                    <p class="doc-module-description">Az AI-lekérdezésre optimalizált rendszer a magyar nyelvet kiválóan kezeli, könnyen bővíthető, és többféle kommunikációs interfészen elérhető (pl. chat, beépülő modul). A válaszok forrásai így pontosan megjelölhetők.</p>
                 </div>
                 <div class="doc-module-image">
                     <img src="inputs/Email_valasz.png" alt="Automatikus válaszadás" class="clickable-image" onclick="openImageModal(this.src)">
@@ -170,16 +201,17 @@
     <section class="use-cases">
         <div class="container">
             <h2>Tipikus felhasználási esetek</h2>
-            <p class="use-cases-intro">Minden olyan esetben, ahol napi szinten nagy mennyiségű ügyfélmegkeresés érkezik be emailen, amelyek folyamatos, gyors és pontos megválaszolása üzleti értéket jelent.</p>
+            <p class="use-cases-intro">Minden olyan esetben, ahol napi szinten nagy mennyiségű ügyfélmegkeresés érkezik be emailen.</p>
             <p class="use-cases-intro"><strong class="use-cases-highlight">Példák különböző területekről:</strong></p>
             <ul class="use-cases-list">
-                <li>Az ügyfélmegkeresések automatikus előfeldolgozása: prioritás megállapítása, kategorizálás és válaszok elkészítése.</li>
-                <li>A gyakran feltett kérdések automatikus megválaszolása a tudásbázis segítségével.</li>
-                <li>Automatikus válaszüzenetek küldése előre elkészített sablonok alapján.</li>
-                <li>Az emailek automatikus továbbítása kategóriák szerint a megfelelő területekre.</li>
-                <li>Statisztikák készítése a beérkező ügyfélmegkeresésekről.</li>
-                <li>Személyre szabott ügyfélválaszok készítése háttérrendszeri hívások alapján.</li>
-                <li>Email csatolmányok feldolgozása és tartalmának használata az email válaszadás során.</li>
+                <li>Beérkező ügyfélmegkeresések automatikus előfeldolgozása</li>
+                <li>Email-ek kategorizálás és továbbítása a megfelelő területhez</li>
+                <li>Beszállítói visszaigazolások, utalási értesítések feldolgozása</li>
+                <li>Toborzásra jelentkezések (CV-k) feldolgozása és előszűrés</li>
+                <li>Elutasító vagy következő lépésről szóló válaszok automatikus generálása</li>
+                <li>Email‑ben jelzett problémák ticket‑té alakítása</li>
+                <li>Szállítólevelek vagy fuvarvisszaigazolások feldolgozása</li>
+                <li>Statisztikák készítése a beérkező ügyfélmegkeresésekről</li>
             </ul>
         </div>
     </section>
@@ -192,7 +224,7 @@
                     <h2>Nálatok mire lehetne használni? <span class="highlight">Találjuk ki együtt!</span></h2>
                 </div>
                 <div class="banner-cta">
-                    <a href="index.html#contact" class="btn-banner">Beszéljünk</a>
+                    <h3><a href="index.html#contact" class="btn-banner">Beszéljünk</a></h3>
                 </div>
             </div>
         </div>
@@ -201,39 +233,16 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Aimee</h3>
-                    <p>Intelligens megoldások a modern kor számára</p>
+            <div class="footer-content-simple">
+                <div class="footer-left">
+                    <p><strong>&copy; 2024 Aimee</strong>. Minden jog fenntartva.</p>
                 </div>
-                <div class="footer-section">
-                    <h4>Linkek</h4>
-                    <ul>
-                        <li><a href="index.html#home">Kezdőlap</a></li>
-                        <li><a href="index.html#features">Funkciók</a></li>
-                        <li><a href="index.html#about">Rólunk</a></li>
-                    </ul>
+                <div class="footer-center">
+                    <p><a href="inputs/AImee_ÁSZF_FINAL_20251103.pdf" target="_blank">Általános szerződési feltételek</a></p>
                 </div>
-                <div class="footer-section">
-                    <h4>Jogi</h4>
-                    <ul>
-                        <li><a href="#">Adatvédelem</a></li>
-                        <li><a href="#">Felhasználási feltételek</a></li>
-                        <li><a href="#">Cookie szabályzat</a></li>
-                    </ul>
+                <div class="footer-right">
+                    <p>Kövess minket: <a href="https://www.linkedin.com/company/aimee-solutions/posts/?feedView=all" target="_blank" aria-label="LinkedIn" class="social-link-box">LI</a></p>
                 </div>
-                <div class="footer-section">
-                    <h4>Kövess minket</h4>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook">FB</a>
-                        <a href="#" aria-label="Twitter">TW</a>
-                        <a href="#" aria-label="LinkedIn">LI</a>
-                        <a href="#" aria-label="Instagram">IG</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Aimee. Minden jog fenntartva.</p>
             </div>
         </div>
     </footer>
