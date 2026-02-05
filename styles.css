@@ -11,7 +11,7 @@
     --secondary-color: #D2C6E1;
     --accent-color: #D2C6E1;
     --text-dark: #2d3748;
-    --text-light: #718096;
+    --text-light: #2B2C2C;
     --bg-light: #f7fafc;
     --bg-white: #ffffff;
     --border-color: #e2e8f0;
@@ -2016,6 +2016,262 @@ html {
     background: var(--bg-white);
     border-left: 4px solid #4F3A6B;
     border-radius: 0.5rem;
+}
+
+/* Pillar Accordion */
+.pillar-accordion {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-sm);
+    align-items: start;
+}
+
+.pillar-item {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+}
+
+.pillar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: linear-gradient(135deg, #227A80 0%, #1a5f64 100%);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.pillar-header-text {
+    flex: 1;
+}
+
+.pillar-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.pillar-subtitle {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin: 0.25rem 0 0 0;
+    font-weight: 400;
+}
+
+.pillar-chevron {
+    width: 28px;
+    height: 28px;
+    color: white;
+    flex-shrink: 0;
+    transition: transform 0.6s ease;
+    margin-left: var(--spacing-md);
+}
+
+.pillar-item.active .pillar-chevron {
+    transform: rotate(180deg);
+}
+
+.pillar-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease, padding 0.6s ease, opacity 0.6s ease;
+    opacity: 0;
+    background: var(--bg-white);
+    padding: 0 var(--spacing-lg);
+}
+
+.pillar-item.active {
+    min-height: 228px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pillar-item.active .pillar-content {
+    max-height: 300px;
+    flex: 1;
+    opacity: 1;
+    padding: var(--spacing-md) var(--spacing-lg) var(--spacing-md);
+}
+
+.pillar-content .mission-list {
+    margin: 0;
+}
+
+.pillar-content .mission-icon {
+    color: var(--primary-color);
+}
+
+/* Step Items */
+.step-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    background: #4F3A6B;
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.step-text {
+    flex: 1;
+}
+
+.step-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 0;
+    display: inline;
+}
+
+.step-description {
+    font-size: 1rem;
+    color: var(--text-light);
+    line-height: 1.5;
+    margin: 0;
+    display: inline;
+}
+
+/* AI Sales Agent - Challenges Grid */
+.challenges-grid-sales {
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.vision-text-sales {
+    background: #F2EEF6;
+    align-self: stretch;
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .challenges-grid-sales {
+        grid-template-columns: 1fr;
+    }
+
+    .vision-text-sales {
+        margin-top: var(--spacing-md);
+    }
+
+    .subpage-body .challenges {
+        background: var(--bg-white);
+    }
+
+    .comparison-stats {
+        grid-template-columns: 1fr !important;
+    }
+
+    .pillar-accordion {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-banner h2 {
+        font-size: 1.25rem !important;
+    }
+
+    #hogyan-mukodik {
+        background: var(--bg-white);
+    }
+
+    .doc-module .doc-module-intro {
+        text-align: left !important;
+    }
+}
+
+/* Comparison Table */
+.comparison-table-wrapper {
+    overflow-x: auto;
+    margin-top: var(--spacing-lg);
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-white);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+.comparison-table thead tr {
+    background: var(--bg-light);
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: var(--spacing-md) var(--spacing-lg);
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.comparison-table th {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--text-dark);
+}
+
+.comparison-table td {
+    font-size: 0.95rem;
+    color: var(--text-light);
+}
+
+.comparison-table .feature-column {
+    text-align: left;
+    font-weight: 600;
+    color: var(--text-dark);
+    background: var(--bg-light);
+    min-width: 180px;
+}
+
+.comparison-table .highlight-column {
+    background: linear-gradient(180deg, rgba(34, 122, 128, 0.1) 0%, rgba(34, 122, 128, 0.05) 100%);
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.comparison-table thead .highlight-column {
+    background: var(--primary-color);
+    color: white;
+}
+
+.comparison-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.comparison-table tbody tr:hover {
+    background: rgba(34, 122, 128, 0.03);
+}
+
+.comparison-table tbody tr:hover .highlight-column {
+    background: linear-gradient(180deg, rgba(34, 122, 128, 0.15) 0%, rgba(34, 122, 128, 0.08) 100%);
+}
+
+.table-yes {
+    color: #22c55e;
+    font-weight: 700;
+    margin-right: 4px;
+}
+
+.table-no {
+    color: #ef4444;
+    font-weight: 700;
+    margin-right: 4px;
 }
 
 /* Timeline Section */
