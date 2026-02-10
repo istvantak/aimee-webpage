@@ -291,6 +291,31 @@ a {
     line-height: 1.6;
 }
 
+.subpage-hero-with-image {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+}
+
+.subpage-hero-with-image .subpage-hero-content {
+    max-width: 100%;
+}
+
+.subpage-hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subpage-hero-image img {
+    height: 300px;
+    width: auto;
+    border-radius: 1rem;
+    filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.15));
+    animation: float 3s ease-in-out infinite;
+}
+
 .challenges-list {
     list-style: none;
     padding: 0;
@@ -1231,8 +1256,9 @@ a {
 
 .footer-left,
 .footer-center,
+.footer-center-2,
 .footer-right {
-    flex: 1;
+    flex: none;
 }
 
 .footer-left p {
@@ -1247,6 +1273,16 @@ a {
 }
 
 .footer-center p {
+    color: #cbd5e0;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.footer-center-2 {
+    text-align: center;
+}
+
+.footer-center-2 p {
     color: #cbd5e0;
     margin: 0;
     font-size: 1rem;
@@ -1372,6 +1408,17 @@ a {
     .subpage-body h2,
     .subpage-body h3 {
         text-align: center;
+    }
+
+    .subpage-hero-with-image {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .subpage-hero-image {
+        order: -1;
+        max-width: 280px;
+        margin: 0 auto;
     }
 
     .subpage-body .subpage-hero-title,
@@ -1731,6 +1778,7 @@ a {
 
     .footer-left p,
     .footer-center p,
+    .footer-center-2 p,
     .footer-right p {
         text-align: center;
     }
@@ -2116,9 +2164,9 @@ html {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 36px;
-    height: 36px;
-    min-width: 36px;
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
     background: #4F3A6B;
     color: white;
     border-radius: 0.5rem;
@@ -2144,6 +2192,37 @@ html {
     line-height: 1.5;
     margin: 0;
     display: inline;
+}
+
+.step-item-block .step-title {
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.step-item-block .step-description {
+    display: block;
+}
+
+/* Hogyan működik Grid */
+.hogyan-mukodik-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+    margin-top: var(--spacing-lg);
+}
+
+.hogyan-mukodik-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hogyan-mukodik-video video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-lg);
 }
 
 /* AI Sales Agent - Challenges Grid */
@@ -2189,8 +2268,29 @@ html {
         background: var(--bg-white);
     }
 
+    .hogyan-mukodik-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hogyan-mukodik-video {
+        order: -1;
+    }
+
     .doc-module .doc-module-intro {
         text-align: left !important;
+    }
+
+    .step-item-block .step-title {
+        display: inline;
+        margin-bottom: 0;
+    }
+
+    .step-item-block .step-title::after {
+        content: " - ";
+    }
+
+    .step-item-block .step-description {
+        display: inline;
     }
 }
 
